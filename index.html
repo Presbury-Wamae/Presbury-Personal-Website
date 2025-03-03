@@ -171,6 +171,7 @@
             <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
+          <span id="Mmg"></span>
         </div>
       </div>
     </div>
@@ -206,17 +207,25 @@
     }
   
   </script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwd6OHwEYwwbEfqWdNR3XGAhsaqwkwUCUoiBTi3-BieTnHZWVngppft_m_hMfD2dYs/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const Mmg = document.getElementById("Mmg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          Mmg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+              Mmg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
-<script>
-  const scriptURL = '<https://script.google.com/macros/s/AKfycbwYtu7zTSvWTg-PNBG9a3xMoJT-d3qZTUTBPRIWOv3gF_0yX-JcJSB1J7_Q0iQPFfYd/exec>'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
 </body>
 </html>
