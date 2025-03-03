@@ -1,11 +1,222 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presbury Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <script src="https://kit.fontawesome.com/5affa57529.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="" class="logo">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-text">
+      <p>Fullstack Developer</p>
+      <h1>Hey, My name is <span>Presbury</span>, a Fullstack Developer.</h1>
+    </div>
+  </div>
+<!-- ---------about-------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col1">
+          <img src="Images/backimg4.png">
+        </div>
+
+        <div class="about-col2">
+          <h1 class="Subtitle">About Me</h1>
+            <p class="Paragraph">
+              Hi, I'm Presbury Wamae, a passionate and aspiring software engineer currently diving deep into full-stack development. 
+            I'm building a strong foundation in coding, design, and problem-solving through my software engineering bootcamp. 
+            I love creating clean, functional, and visually appealing websites, and I'm working on developing my personal portfolio to showcase my projects. 
+            When I'm not coding, I'm exploring new design trends and sharpening my skills to bring creative ideas to life
+          </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link onclick=opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links"onclick="opentab('projects')">Projects</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Front-End Development</span><br>Designing the front user-end</li>
+                <li><span>Back-End Development</span><br>Designing the back user-end</li>
+                <li><span>App Development</span><br>Building Android/IOS Apps</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents"id="experience">
+              <ul>
+                <li>2025 - till date<span><br>Full-stack Web Development At Moringa School</span></li>
+              </ul>
+            </div>
+
+            <div class="tab-contents"id="projects">
+              <ul>
+                <li>2025<span><br>Project Kartmis</span><br></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- -----------------------services---------------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="Subtitle">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-computer"></i>
+        <h2>Web Design</h2>
+        <p>
+          Web design focuses on creating visually appealing and functional websites. 
+          It involves selecting layouts, colors, typography, and images to ensure a seamless user experience. 
+          A well-designed website is responsive, user-friendly, and optimized for performance, ensuring accessibility across different devices and screen sizes.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-figma"></i>
+        <h2>App Design</h2>
+        <p>
+          App design involves structuring and styling mobile and web applications to enhance usability and visual appeal. 
+          It includes UI/UX principles to ensure smooth navigation, responsive layouts, and interactive elements. 
+          A well-designed app prioritizes user needs, providing an intuitive and enjoyable experience across different devices.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-regular fa-thumbs-up"></i>
+        <h2>UI/UX Design</h2>
+        <p>
+          UI/UX design enhances user interaction with digital products by focusing on usability and aesthetics.
+          UI (User Interface) design ensures visually appealing and intuitive layouts, while UX (User Experience) design improves functionality and ease of navigation. 
+          Together, they create engaging, efficient, and user-friendly experiences.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------------------portfolio----------------- -->
+ <div id="portfolio">
+  <div class="container">
+    <h1 class="Subtitle">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="/Images/Work3.jpeg"> 
+        <div class="layer">
+              <h3>Social Media Apps</h3>
+              <p>Connects people with their loved ones.</p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+        </div>
+      </div>
+      
+      <div class="layer">
+        <img src="/Images/Work3.jpeg">
+        <h3>Online Shopping Apps</h3>
+        <p>One stop shop on your phone.Easy Convinient For You.</p>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></i></a>
+      </div>
+      
+      <div class="layer">
+        <img src="/Images/Work3.jpeg">
+        <h3>Music Apps</h3>
+        <p>All your great hits all in one place.</p>
+        <a href="#"><i class="fa-solid fa-music"></i></a>
+      </div>
+    </div>
+
+    <a href="#" class="btn">See More</a>
+  </div>
+ </div> 
+ <!-- -----------contact------------- -->
+  <div id="contact">
+    <div class="container">
+
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="Subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> wamaepresbury034@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> +254 702 080 884</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></i></a>
+          </div>
+          <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="E-mail" name="E-mail" placeholder="Your E-mail" required>
+            <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &#x24B8 Presbury. All Rights Reserved <i class="fa-solid fa-registered"></i></p>
+    </div>
+
+  </div>
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  
+  </script>
+
+<script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbwYtu7zTSvWTg-PNBG9a3xMoJT-d3qZTUTBPRIWOv3gF_0yX-JcJSB1J7_Q0iQPFfYd/exec>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
 </html>
