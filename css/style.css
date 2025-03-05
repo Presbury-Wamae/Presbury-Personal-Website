@@ -131,8 +131,6 @@ nav ul li a:hover::after{
 .services{
     padding: 30px 0;
     margin-top: -100px;
-    /* background: #f8f9fa;
-    text-align: center; */
 }
 .services-list{
     display: flex;
@@ -182,31 +180,6 @@ nav ul li a:hover::after{
     gap: 20px;
     margin-top: 20px;
   }
-  /* /* .work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-  }
-  .work{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-  } */
-  /* .layer{ */
-    /* width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0,6), aqua);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center; */
 .btn{
     display: block;
     margin: 50px auto;
